@@ -1,0 +1,74 @@
+{
+  "menuList":[
+  {
+    "name": "Crunchy Granola",
+    "ingredients": "Toasted granola, seasonal fruit, coconut flakes, Greek yoghurt, white chocolate",
+    "price": 18,
+    "category": "BREAKFAST",
+    "dietary": "VEGETARIAN"
+  },
+  {
+    "name": "Egg & Bacon Burger",
+    "ingredients": "Fried egg, grilled bacon, scamorza cheese, tomato relish, chipotle mayo, brioche bun",
+    "price": 17,
+    "category": "LUNCH",
+    "dietary": "NONE"
+  },
+  {
+    "name": "Smashed Avo",
+    "ingredients": "Avocado, dukkah, cherry tomato, lemon, coriander, sourdough",
+    "price": 22,
+    "category": "BREAKFAST",
+    "dietary": "VEGAN"
+  },
+  {
+    "name": "Classic Brekkie",
+    "ingredients": "Poached eggs, bacon, chorizo, mushrooms, grilled tomato, sourdough",
+    "price": 27,
+    "category": "LUNCH",
+    "dietary": "NONE"
+  },
+  {
+    "name": "BLAT Sandwich",
+    "ingredients": "Bacon, lettuce, avocado, tomato, mayonnaise, focaccia",
+    "price": 17,
+    "category": "BREAKFAST",
+    "dietary": "NUT_FREE"
+  },
+  {
+    "name": "Classic Chicken Salad",
+    "ingredients": "Grilled chicken, avocado, mixed leaves, heirloom tomatoes, almonds, dressing",
+    "price": 23,
+    "category": "ALL_DAY",
+    "dietary": "HALAL"
+  },
+  {
+    "name": "Classic Beef Burger",
+    "ingredients": "Beef patty, bacon, onion, cheese, lettuce, tomato, burger sauce, chips",
+    "price": 25,
+    "category": "ALL_DAY",
+    "dietary": "NONE"
+  },
+  {
+    "name": "Margherita Pizza",
+    "ingredients": "Napoli sauce, basil, garlic, olive oil",
+    "price": 24,
+    "category": "ALL_DAY",
+    "dietary": "VEGETARIAN"
+  },
+  {
+    "name": "Plant Based Pizza",
+    "ingredients": "Napoli sauce, fior di latte, mushrooms, capsicum, olives, onion",
+    "price": 27,
+    "category": "ALL_DAY",
+    "dietary": "VEGAN"
+  },
+  {
+    "name": "Salt & Pepper Calamari",
+    "ingredients": "Calamari, salad, chips, lemon, aioli",
+    "price": 29,
+    "category": "DINNER",
+    "dietary": "SEAFOOD"
+  }
+]
+}

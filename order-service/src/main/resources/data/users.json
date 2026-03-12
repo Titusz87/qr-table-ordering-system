@@ -1,0 +1,14 @@
+{
+  "userList": [
+    { "firstName": "John", "lastName": "Doe", "userName": "John123", "email": "john.doe@example.com", "phone": 5551001, "address": "123 Maple Street, Springfield" },
+    { "firstName": "Jane", "lastName": "Smith", "userName": "Jane123","email": "jane.smith@example.com", "phone": 5551002, "address": "456 Oak Avenue, Rivertown" },
+    { "firstName": "Michael", "lastName": "Brown", "userName": "Michael123", "email": "michael.brown@example.com", "phone": 5551003, "address": "789 Pine Lane, Lakeside" },
+    { "firstName": "Emily", "lastName": "Johnson", "userName": "Emily123","email": "emily.johnson@example.com", "phone": 5551004, "address": "321 Birch Road, Hillview" },
+    { "firstName": "David", "lastName": "Wilson", "userName": "David123","email": "david.wilson@example.com", "phone": 5551005, "address": "654 Cedar Court, Meadowbrook" },
+    { "firstName": "Sarah", "lastName": "Miller", "userName": "Sarah123","email": "sarah.miller@example.com", "phone": 5551006, "address": "987 Elm Street, Brookfield" },
+    { "firstName": "Daniel", "lastName": "Anderson", "userName": "Daniel123","email": "daniel.anderson@example.com", "phone": 5551007, "address": "159 Willow Drive, Greenfield" },
+    { "firstName": "Laura", "lastName": "Taylor", "userName": "Laura123","email": "laura.taylor@example.com", "phone": 5551008, "address": "753 Poplar Avenue, Westwood" },
+    { "firstName": "James", "lastName": "Thomas", "userName": "James123","email": "james.thomas@example.com", "phone": 5551009, "address": "852 Chestnut Street, Fairview" },
+    { "firstName": "Nelly", "lastName": "Moore", "userName": "Nelly123","email": "nelly.moore@example.com", "phone": 5551010, "address": "963 Spruce Lane, Brookside" }
+  ]
+}
