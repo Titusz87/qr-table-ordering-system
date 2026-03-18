@@ -1,4 +1,7 @@
 spring:
+  config:
+    import: optional:secrets.properties
+
   jpa:
     hibernate:
       ddl-auto: validate
