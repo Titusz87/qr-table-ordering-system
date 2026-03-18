@@ -1,11 +1,10 @@
 package org.restaurant.authorizationserver;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
-import org.springframework.security.config.annotation.web.configurers.oauth2.server.authorization.OAuth2AuthorizationServerConfigurer;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.core.AuthorizationGrantType;
@@ -22,11 +21,14 @@ import java.util.UUID;
 public class AuthorizationServerConfig {
 
     @Bean
-    public RegisteredClientRepository registeredClientRepository() {
+    public RegisteredClientRepository registeredClientRepository(
+            @Value("${AUTH_CLIENT_ID}") String clientID,
+            @Value("${AUTH_CLIENT_SECRET}") String clientSecret
+    ) {
 
         RegisteredClient registrarClient = RegisteredClient.withId(UUID.randomUUID().toString())
-                .clientId("admin")
-                .clientSecret(encoder().encode("adminpassword"))
+                .clientId(clientID)
+                .clientSecret(encoder().encode(clientSecret))
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
                 .scope("client.create")
