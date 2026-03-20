@@ -33,4 +33,7 @@ build/
 .vscode/
 
 ### Secrets ###
-secrets.yaml
+.env
+
+### Configurations ###
+profile_config.yaml

@@ -22,8 +22,8 @@ public class AuthorizationServerConfig {
 
     @Bean
     public RegisteredClientRepository registeredClientRepository(
-            @Value("${AUTH_CLIENT_ID}") String clientID,
-            @Value("${AUTH_CLIENT_SECRET}") String clientSecret
+            @Value("${auth.client.id}") String clientID,
+            @Value("${auth.client.secret}") String clientSecret
     ) {
 
         RegisteredClient registrarClient = RegisteredClient.withId(UUID.randomUUID().toString())

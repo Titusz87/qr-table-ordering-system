@@ -1,11 +1,8 @@
-server:
-  port: 8081
-
 spring:
-  application:
-    name: order-service
+  config:
+    import: optional:classpath:secrets_db.yaml
 
-  datasource:
+  application:
     name: order-service
 
   jpa:
@@ -16,3 +13,6 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://192.168.1.102:9000
+
+server:
+  port: 8081

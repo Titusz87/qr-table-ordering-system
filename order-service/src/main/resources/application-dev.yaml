@@ -9,6 +9,8 @@ spring:
     driver-class-name: org.h2.Driver
     generate-unique-name: false
     name: order-service-db
+    username: sa
+    password: ""
 
   h2:
     console:
