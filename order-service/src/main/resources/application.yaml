@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: optional:classpath:profile_config.yaml
 
   application:
     name: order-service
@@ -10,7 +12,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://192.168.1.102:9000
+          issuer-uri: http://localhost:9000
 
 server:
   port: 8081
