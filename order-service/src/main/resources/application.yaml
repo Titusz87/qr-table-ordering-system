@@ -1,6 +1,4 @@
 spring:
-  config:
-    import: optional:classpath:secrets_db.yaml
 
   application:
     name: order-service

@@ -26,16 +26,27 @@ public class AuthorizationServerConfig {
             @Value("${auth.client.secret}") String clientSecret
     ) {
 
-        RegisteredClient registrarClient = RegisteredClient.withId(UUID.randomUUID().toString())
+        RegisteredClient adminClient = RegisteredClient.withId(UUID.randomUUID().toString())
                 .clientId(clientID)
                 .clientSecret(encoder().encode(clientSecret))
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
-                .scope("client.create")
-                .scope("client.read")
+                .scope("order.get")
+                .scope("order.post")
+                .scope("order.update")
+                .scope("order.delete")
                 .build();
 
-        return new InMemoryRegisteredClientRepository(registrarClient);
+        RegisteredClient publicClient = RegisteredClient.withId(UUID.randomUUID().toString())
+                .clientId("public_client")
+                .clientSecret("public_secret")
+                .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
+                .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
+                .scope("order.get")
+                .scope("order.post")
+                .build();
+
+        return new InMemoryRegisteredClientRepository(adminClient, publicClient);
     }
     @Bean
     public PasswordEncoder encoder(){
