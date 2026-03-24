@@ -1,4 +1,0 @@
-### ACTIVE PROFILE ###
-spring:
-  profiles:
-    active: dev
