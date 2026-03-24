@@ -4,158 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/order-service/compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/bootstrap/DataLoaderDev.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/bootstrap/DataLoaderProd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/api/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/model/Dietary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/model/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/model/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/repository/MenuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/service/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/api/OrderControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/CreateOrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/CreateOrderRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/CreateOrderResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/GetOrdersRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/GetOrdersRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/GetOrdersResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/OrderItemRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/OrderItemResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/mapper/impl/OrderMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/OrderItemRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/PaymentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/repository/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/api/UserControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/dto/CreateUserRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/dto/CreateUserResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/model/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/repository/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/resources/application-prod.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/resources/data/menu.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/resources/data/orders.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/resources/data/payments.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/resources/data/users.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/src/main/java/org/restaurant/authorizationserver/AuthorizationServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/src/main/java/org/restaurant/authorizationserver/AuthorizationServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/src/main/java/org/restaurant/authorizationserver/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/src/main/java/org/restaurant/authorizationserver/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/src/main/resources/secrets_auth.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/src/main/resources/secrets_auth.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-server/src/test/java/org/restaurant/authorizationserver/AuthorizationServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/src/test/java/org/restaurant/authorizationserver/AuthorizationServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-application/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-application/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-application/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-application/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-application/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-application/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-application/src/main/java/org/restaurant/clientapplication/ClientApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-application/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-application/src/test/java/org/restaurant/clientapplication/ClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/test/java/org/restaurant/orderservice/OrderServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/OrderServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/bootstrap/DataLoaderDev.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/bootstrap/DataLoaderProd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/menu/api/MenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/model/Dietary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/model/Dish.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/model/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/repository/MenuDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/service/MenuService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/api/CreateOrderRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/api/OrderControllerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/CreateOrderRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/CreateOrderResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/GetOrdersRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/GetOrdersRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/GetOrdersResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/OrderItemRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/OrderItemResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/mapper/OrderMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/mapper/impl/OrderMapperImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/OrderItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/OrderItemRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/OrderStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/Payment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/model/PaymentType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/repository/OrderDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/service/impl/OrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/user/api/UserControllerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/user/dto/CreateUserRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/user/dto/CreateUserResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/model/Users.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/repository/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application-dev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application-prod.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/data/menu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/data/orders.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/data/payments.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/data/users.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/profile_config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/test/java/org/restaurant/orderservice/OrderServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-service/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-service/src/main/java/org/restaurant/qrservice/QrServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/QrServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-service/src/test/java/org/restaurant/qrservice/QrServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/src/test/java/org/restaurant/qrservice/QrServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/restaurant/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/restaurant/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.yaml" afterDir="false" />
+    <list default="true" id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="Refactors the project's structure">
+      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/dto/GetMenuResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/mapper/impl/MenuMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/authorization-server/src/main/java/org/restaurant/authorizationserver/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/src/main/java/org/restaurant/authorizationserver/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/api/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/api/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/repository/MenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/repository/MenuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/service/MenuService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,19 +52,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AuthorizationServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Titus/OneDrive/Desktop/projects/java/qr-table-ordering-system&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.AuthorizationServerApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Titus/OneDrive/Desktop/projects/java/qr-table-ordering-system"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Titus\OneDrive\Desktop\projects\java\qr-table-ordering-system\backend" />
@@ -248,6 +123,27 @@
       <option name="presentableId" value="Default" />
       <updated>1774310883407</updated>
     </task>
+    <task id="LOCAL-00001" summary="Refactors the project's structure">
+      <option name="closed" value="true" />
+      <created>1774315495345</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774315495346</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Refactors the project's structure">
+      <option name="closed" value="true" />
+      <created>1774315544613</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1774315544613</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactors the project's structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactors the project's structure" />
   </component>
 </project>

@@ -12,20 +12,23 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class OrderServiceConfig {
 
-    private static final String path = "/api/v1/orders/**";
+    private static final String order_path = "/api/v1/orders/**";
+    private static final String menu_path = "/api/v1/menu/**";
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         http
                 .authorizeHttpRequests((authorize) -> authorize
-                        .requestMatchers(HttpMethod.GET,  path)
+                        .requestMatchers(HttpMethod.GET,  order_path)
                         .hasAuthority("SCOPE_order.get")
-                        .requestMatchers(HttpMethod.POST, path)
+                        .requestMatchers(HttpMethod.POST, order_path)
                         .hasAuthority("SCOPE_order.post")
-                        .requestMatchers(HttpMethod.PUT, path)
+                        .requestMatchers(HttpMethod.PUT, order_path)
                         .hasAuthority("SCOPE_order.update")
-                        .requestMatchers(HttpMethod.DELETE, path)
+                        .requestMatchers(HttpMethod.DELETE, order_path)
                         .hasAuthority("SCOPE_order.delete")
+                        .requestMatchers(HttpMethod.GET,  menu_path)
+                        .hasAuthority("SCOPE_menu.get")
 
                         .anyRequest().authenticated()
                 )

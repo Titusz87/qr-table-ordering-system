@@ -47,6 +47,7 @@ public class AuthorizationServerConfig {
                 .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
                 .scope("order.get")
                 .scope("order.post")
+                .scope("menu.get")
                 .build();
 
         return new InMemoryRegisteredClientRepository(adminClient, publicClient);
