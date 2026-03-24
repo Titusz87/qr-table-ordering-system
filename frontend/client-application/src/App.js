@@ -1,15 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import AlignItemsList from './components/menu';
+import Menu from './components/menu';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <AlignItemsList></AlignItemsList>
-      
+       <Menu></Menu>    
 
-      </header>
     </div>
   );
 }

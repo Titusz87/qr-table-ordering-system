@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="Refactors the project's structure">
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/dto/GetMenuResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/mapper/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/mapper/impl/MenuMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/service/impl/MenuServiceImpl.java" afterDir="false" />
+    <list default="true" id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="Adds menu endpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/authorization-server/src/main/java/org/restaurant/authorizationserver/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/src/main/java/org/restaurant/authorizationserver/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/api/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/api/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/repository/MenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/repository/MenuDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client-application/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client-application/src/components/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/components/menu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,21 +45,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.AuthorizationServerApplication.executor": "Run",
-    "Spring Boot.OrderServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Titus/OneDrive/Desktop/projects/java/qr-table-ordering-system"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthorizationServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Titus/OneDrive/Desktop/projects/java/qr-table-ordering-system&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Titus\OneDrive\Desktop\projects\java\qr-table-ordering-system\backend" />
@@ -139,11 +132,20 @@
       <option name="project" value="LOCAL" />
       <updated>1774315544613</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adds menu endpoint">
+      <option name="closed" value="true" />
+      <created>1774324418591</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1774324418591</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactors the project's structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactors the project's structure" />
+    <MESSAGE value="Adds menu endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds menu endpoint" />
   </component>
 </project>
