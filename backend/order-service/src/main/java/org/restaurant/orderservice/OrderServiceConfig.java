@@ -7,6 +7,12 @@ import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+
+import java.util.Arrays;
+import java.util.List;
 
 @Configuration
 @EnableWebSecurity
@@ -18,6 +24,10 @@ public class OrderServiceConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         http
+                .cors((cors) -> cors
+                        .configurationSource(clientApplicationConfiguration())
+                )
+                .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests((authorize) -> authorize
                         .requestMatchers(HttpMethod.GET,  order_path)
                         .hasAuthority("SCOPE_order.get")
@@ -27,8 +37,8 @@ public class OrderServiceConfig {
                         .hasAuthority("SCOPE_order.update")
                         .requestMatchers(HttpMethod.DELETE, order_path)
                         .hasAuthority("SCOPE_order.delete")
-                        .requestMatchers(HttpMethod.GET,  menu_path)
-                        .hasAuthority("SCOPE_menu.get")
+                        .requestMatchers(HttpMethod.GET,  menu_path).permitAll()
+                        //.hasAuthority("SCOPE_menu.get")
 
                         .anyRequest().authenticated()
                 )
@@ -37,4 +47,16 @@ public class OrderServiceConfig {
                 );
         return http.build();
     }
+
+    @Bean
+    UrlBasedCorsConfigurationSource clientApplicationConfiguration() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000"));
+        configuration.setAllowedMethods(Arrays.asList("GET","POST","PUT","DELETE", "OPTIONS"));
+        configuration.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type"));
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration);
+        return source;
+    }
+
 }

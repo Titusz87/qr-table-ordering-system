@@ -10,6 +10,7 @@ export default function Menu(){
     useEffect(() => {
         axios.get('http://localhost:8081/api/v1/menu').then(response => {
             setMenu(response.data)
+            console.log(response.data)
         })
 }, []);
 
