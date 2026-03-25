@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { TableContainer } from "@mui/material";
-import { Paper } from '@mui/material';
+import Card from '@mui/material/Card';
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import CardActions from '@mui/material/CardActions';
+import Avatar from '@mui/material/Avatar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import { red } from '@mui/material/colors';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import Button from '@mui/material/Button';
 
-export default function Menu(){
-
-    const [menu, setMenu] = useState(null)
+export default function RecipeReviewCard() {
+ /*
+  const [menu, setMenu] = useState(null)
 
     useEffect(() => {
         axios.get('http://localhost:8081/api/v1/menu').then(response => {
@@ -13,10 +22,43 @@ export default function Menu(){
             console.log(response.data)
         })
 }, []);
+*/
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardHeader
+        avatar={
+          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            R
+          </Avatar>
+        }
+  
+        title="Shrimp and Chorizo Paella"
+        subheader="September 14, 2016"
+      />
+      <CardMedia
+        component="img"
+        height="194"
+        image="/static/images/cards/paella.jpg"
+        alt="Paella dish"
+      />
+      <CardContent>
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+          This impressive paella is a perfect party dish and a fun meal to cook
+          together with your guests. Add 1 cup of frozen peas along with the mussels,
+          if you like.
+        </Typography>
+      </CardContent>
 
-    return (
-        <TableContainer component={Paper} style={{with:'70%'}}>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+          <FavoriteIcon />
+        </IconButton>
+        <Button loading variant="outlined" loadingPosition="end">
+          Ordering
+        </Button>
+      </CardActions>
 
-        </TableContainer>
-    )
+    </Card>
+  );
 }
+
