@@ -13,6 +13,7 @@ public class MenuMapperImpl implements MenuMapper {
     public List<GetMenuResponseDto> toGetMenuResponseDto(List<Dish> menu) {
         return menu.stream()
                 .map(dish -> new GetMenuResponseDto(
+                        dish.getId(),
                         dish.getDishName(),
                         dish.getIngredients(),
                         dish.getCategory(),

@@ -28,7 +28,7 @@ public class AuthorizationServerConfig {
             @Value("${auth.client.id}") String clientID,
             @Value("${auth.client.secret}") String clientSecret
     ) {
-
+        // TODO: Implement JdbcRegisteredClientRepository
         RegisteredClient adminClient = RegisteredClient.withId(UUID.randomUUID().toString())
                 .clientId(clientID)
                 .clientSecret(encoder().encode(clientSecret))

@@ -13,18 +13,28 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import Button from '@mui/material/Button';
 
 export default function RecipeReviewCard() {
- /*
-  const [menu, setMenu] = useState(null)
+ 
+  const [menu, setMenu] = useState([])
 
-    useEffect(() => {
-        axios.get('http://localhost:8081/api/v1/menu').then(response => {
-            setMenu(response.data)
-            console.log(response.data)
-        })
-}, []);
-*/
+  useEffect(() => {
+    axios.get('http://localhost:8081/api/v1/menu')
+      .then(response => {
+        setMenu(response.data);
+        console.log(response.data);
+      })
+      .catch(err => console.error(err));
+  }, []);
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
+    {menu.length === 0 ? (
+      <p>Loading menu...</p>
+    ) : (
+      menu.map((item) => (
+    
+      <Card key={item.id} sx={{ maxWidth: 345 }}>
+      
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -32,20 +42,18 @@ export default function RecipeReviewCard() {
           </Avatar>
         }
   
-        title="Shrimp and Chorizo Paella"
+        title= {item.dishName}
         subheader="September 14, 2016"
       />
       <CardMedia
         component="img"
         height="194"
         image="/static/images/cards/paella.jpg"
-        alt="Paella dish"
+        alt=""
       />
       <CardContent>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
+          {item.ingredients}
         </Typography>
       </CardContent>
 
@@ -59,6 +67,9 @@ export default function RecipeReviewCard() {
       </CardActions>
 
     </Card>
+      ))  
+  )}
+    </div>
   );
 }
 

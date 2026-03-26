@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="Adds menu endpoint">
+    <list default="true" id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="Fixes Access-Control-Allow-Origin issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/api/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/api/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/authorization-server/src/main/java/org/restaurant/authorizationserver/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/authorization-server/src/main/java/org/restaurant/authorizationserver/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/dto/GetMenuResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/dto/GetMenuResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/mapper/impl/MenuMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/menu/internal/mapper/impl/MenuMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client-application/src/components/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/components/menu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,12 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1774324418591</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixes Access-Control-Allow-Origin issue">
+      <option name="closed" value="true" />
+      <created>1774404996503</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1774404996504</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactors the project's structure" />
     <MESSAGE value="Adds menu endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds menu endpoint" />
+    <MESSAGE value="Fixes Access-Control-Allow-Origin issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes Access-Control-Allow-Origin issue" />
   </component>
 </project>
