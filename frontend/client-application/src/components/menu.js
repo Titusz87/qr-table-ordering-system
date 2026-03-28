@@ -11,8 +11,10 @@ import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import Grid from '@mui/material/Grid';
 
-export default function RecipeReviewCard() {
+export default function DishReviewCard() {
  
   const [menu, setMenu] = useState([])
 
@@ -26,14 +28,17 @@ export default function RecipeReviewCard() {
   }, []);
 
   return (
+    <Stack spacing={2} sx={{ padding: 2 }}>
+      <Grid container spacing={2} columns={{ xs: 12, sm: 12, md: 12, lg: 12 }}>
+      
     
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
     {menu.length === 0 ? (
       <p>Loading menu...</p>
     ) : (
       menu.map((item) => (
-    
-      <Card key={item.id} sx={{ maxWidth: 345 }}>
+        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ display: 'flex' }}>
+   
+   <Card sx={{ minWidth: 250, width: '100%', display: 'flex', flexDirection: 'column' }} >
       
       <CardHeader
         avatar={
@@ -50,8 +55,9 @@ export default function RecipeReviewCard() {
         height="194"
         image="/static/images/cards/paella.jpg"
         alt=""
+        sx={{ width: '100%', height: 'auto' }}
       />
-      <CardContent>
+      <CardContent sx={{ flexGrow: 1 }}>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           {item.ingredients}
         </Typography>
@@ -62,14 +68,17 @@ export default function RecipeReviewCard() {
           <FavoriteIcon />
         </IconButton>
         <Button loading variant="outlined" loadingPosition="end">
-          Ordering
+          Pending
         </Button>
       </CardActions>
 
     </Card>
+    </Grid>
       ))  
   )}
-    </div>
+    
+    </Grid>
+    </Stack>
   );
 }
 

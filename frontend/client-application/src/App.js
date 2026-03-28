@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import Menu from './components/menu';
+import BottomNavBar from './components/bottomNav';
+
 
 function App() {
   return (
     <div className="App">
-       <Menu></Menu>    
-
+      <div className="container">
+       <Menu />   
+      <BottomNavBar />
+      </div>
     </div>
   );
 }
