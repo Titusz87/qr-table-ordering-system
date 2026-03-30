@@ -8,11 +8,12 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
+import { red } from '@mui/material/colors';
+import { alpha } from '@mui/material/styles';
 
 export default function DishReviewCard() {
  
@@ -36,9 +37,9 @@ export default function DishReviewCard() {
       <p>Loading menu...</p>
     ) : (
       menu.map((item) => (
-        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ display: 'flex' }}>
+        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ display: 'flex', minWidth: 0 }}>
    
-   <Card sx={{ minWidth: 250, width: '100%', display: 'flex', flexDirection: 'column' }} >
+   <Card sx={{ width: 350, flexShrink: 0, display: 'flex', flexDirection: 'column' }} >
       
       <CardHeader
         avatar={
@@ -48,7 +49,7 @@ export default function DishReviewCard() {
         }
   
         title= {item.dishName}
-        subheader="September 14, 2016"
+        subheader=""
       />
       <CardMedia
         component="img"
@@ -63,13 +64,20 @@ export default function DishReviewCard() {
         </Typography>
       </CardContent>
 
-      <CardActions disableSpacing>
+      <CardActions  sx={{ justifyContent: 'space-between' }}>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
-        <Button loading variant="outlined" loadingPosition="end">
-          Pending
-        </Button>
+        
+        <Button   variant="outlined"
+  sx={{
+    color: red[500],
+    borderColor: red[500],
+    '&:hover': {
+      backgroundColor: alpha(red[500], 0.08),
+      borderColor: red[500],
+    },
+  }}>Add</Button>
       </CardActions>
 
     </Card>

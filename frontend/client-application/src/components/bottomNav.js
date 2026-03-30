@@ -20,7 +20,7 @@ export default function BottomNavBar() {
       >
         <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
         <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-        <BottomNavigationAction label="Nearby" icon={<CartIconButton />} />
+        <BottomNavigationAction label="Cart" icon={<CartIconButton />} />
       </BottomNavigation>
     </Box>
   );
