@@ -15,15 +15,15 @@ import Grid from '@mui/material/Grid';
 import { red } from '@mui/material/colors';
 import { alpha } from '@mui/material/styles';
 
-export default function DishReviewCard() {
+export default function DishReviewCard({ setCartCount }) {
  
   const [menu, setMenu] = useState([])
+  const [addedItems, setAddedItems] = useState({});
 
   useEffect(() => {
     axios.get('http://localhost:8081/api/v1/menu')
       .then(response => {
         setMenu(response.data);
-        console.log(response.data);
       })
       .catch(err => console.error(err));
   }, []);
@@ -69,7 +69,14 @@ export default function DishReviewCard() {
           <FavoriteIcon />
         </IconButton>
         
-        <Button   variant="outlined"
+        <Button
+  onClick={() => {
+    setCartCount(count => count + 1);
+    setAddedItems(prev => ({
+      ...prev,
+      [item.id]: true,
+    }));
+  }} variant="outlined" disabled={addedItems[item.id]}
   sx={{
     color: red[500],
     borderColor: red[500],
@@ -77,7 +84,7 @@ export default function DishReviewCard() {
       backgroundColor: alpha(red[500], 0.08),
       borderColor: red[500],
     },
-  }}>Add</Button>
+  }}>{addedItems[item.id] ? "Added" : "Add"}</Button>
       </CardActions>
 
     </Card>

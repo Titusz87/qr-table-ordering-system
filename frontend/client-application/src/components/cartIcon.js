@@ -10,11 +10,11 @@ const CartBadge = styled(Badge)`
   }
 `;
 
-export default function CartIconButton() {
+export default function CartIconButton({cartCount}) {
   return (
     <IconButton>
       <ShoppingCartIcon fontSize="small" />
-      <CartBadge badgeContent={2} color="primary" overlap="circular" />
+      <CartBadge badgeContent={cartCount} color="primary" overlap="circular" />
     </IconButton>
   );
 }

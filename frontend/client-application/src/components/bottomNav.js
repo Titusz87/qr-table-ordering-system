@@ -6,7 +6,7 @@ import RestoreIcon from '@mui/icons-material/Restore';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import CartIconButton from './cartIcon';
 
-export default function BottomNavBar() {
+export default function BottomNavBar({ cartCount }) {
   const [value, setValue] = React.useState(0);
 
   return (
@@ -28,7 +28,7 @@ export default function BottomNavBar() {
       >
         <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
         <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-        <BottomNavigationAction label="Cart" icon={<CartIconButton />} />
+        <BottomNavigationAction label="Cart" icon={<CartIconButton cartCount={cartCount} />} />
       </BottomNavigation>
     </Box>
   );
