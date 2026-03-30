@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="Fixes Access-Control-Allow-Origin issue">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client-application/src/components/bottomNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/components/bottomNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client-application/src/components/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/components/menu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -10,7 +10,15 @@ export default function BottomNavBar() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{ width: 500 }}>
+    <Box
+    sx={{
+      position: "fixed",
+      bottom: 0,
+      left: 0,
+      right: 0,
+      zIndex: (theme) => theme.zIndex.drawer + 1,
+    }}
+    >
       <BottomNavigation
         showLabels
         value={value}

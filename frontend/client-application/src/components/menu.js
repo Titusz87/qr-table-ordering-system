@@ -29,7 +29,7 @@ export default function DishReviewCard() {
   }, []);
 
   return (
-    <Stack spacing={2} sx={{ padding: 2 }}>
+    <Stack spacing={2} sx={{ padding: 2, pb: 10 }}>
       <Grid container spacing={2} columns={{ xs: 12, sm: 12, md: 12, lg: 12 }}>
       
     
