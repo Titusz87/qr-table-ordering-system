@@ -76,7 +76,7 @@ export default function DishReviewCard({ setCartCount, setCartItems }) {
       ...prev,
       [item.id]: true,
     }));
-    setCartItems(prev => [...prev, item]);
+    setCartItems(prev => [...prev, { ...item, quantity: 1 }]);
   }} variant="outlined" disabled={addedItems[item.id]}
   sx={{
     color: red[500],
