@@ -21,7 +21,7 @@ function App() {
     setCartItems(prev =>
       prev.map((item, i) =>
         i === index
-          ? { ...item, quantity: Math.max(item.quantity - 1, 1) }
+          ? { ...item, quantity: Math.max(item.quantity - 1, 0) }
           : item
       )
     );
@@ -30,10 +30,15 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-       <Menu setCartCount={setCartCount} setCartItems={setCartItems}/>   
+       <Menu 
+       setCartCount={setCartCount} 
+       setCartItems={setCartItems} 
+       cartItems={cartItems}/>
        <BottomNavBar
   cartCount={cartCount}
+  setCartCount={setCartCount}
   cartItems={cartItems}
+  setCartItems={setCartItems}
   increaseQty={increaseQty}
   decreaseQty={decreaseQty}
 />

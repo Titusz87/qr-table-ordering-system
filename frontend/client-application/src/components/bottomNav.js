@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from "react";
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import RestoreIcon from '@mui/icons-material/Restore';
@@ -21,11 +21,13 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function BottomNavBar({ 
   cartCount, 
+  setCartCount,
   cartItems,
+  setCartItems,
   increaseQty,
   decreaseQty 
 }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -107,8 +109,21 @@ export default function BottomNavBar({
   </DialogContent>
 
      <DialogActions>
-       <Button onClick={handleClose}>Close</Button>
-       <Button variant="contained"  disabled={cartItems.length === 0}>Send Order</Button>
+     <Button
+  onClick={() => {
+    const filtered = cartItems.filter(item => item.quantity > 0);
+    setCartItems(filtered);
+    setCartCount(filtered.length);
+    handleClose();
+  }}
+  >Close
+  </Button>
+       <Button variant="contained"  disabled={
+        cartItems.length === 0 || 
+        cartItems.every(item => item.quantity === 0)}
+        >
+          Send Order
+          </Button>
      </DialogActions>
    </Dialog>
    </>
