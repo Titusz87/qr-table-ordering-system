@@ -15,7 +15,7 @@ import Grid from '@mui/material/Grid';
 import { red } from '@mui/material/colors';
 import { alpha } from '@mui/material/styles';
 
-export default function DishReviewCard({ setCartCount }) {
+export default function DishReviewCard({ setCartCount, setCartItems }) {
  
   const [menu, setMenu] = useState([])
   const [addedItems, setAddedItems] = useState({});
@@ -76,6 +76,7 @@ export default function DishReviewCard({ setCartCount }) {
       ...prev,
       [item.id]: true,
     }));
+    setCartItems(prev => [...prev, item]);
   }} variant="outlined" disabled={addedItems[item.id]}
   sx={{
     color: red[500],
