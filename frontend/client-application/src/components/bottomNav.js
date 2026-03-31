@@ -25,9 +25,26 @@ export default function BottomNavBar({
   cartItems,
   setCartItems,
   increaseQty,
-  decreaseQty 
+  decreaseQty,
+  billTotal
 }) {
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSendOrder = () => {
+    setLoading(true); // start loading
+    // simulate async API call with setTimeout
+    setTimeout(() => {
+      //  send the order logic here later
+      
+      setLoading(false); // reset after done
+    }, 2000);
+  };
+
+  const isDisabled =
+    cartItems.length === 0 ||
+    cartItems.every(item => item.quantity === 0) ||
+    loading; 
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -103,7 +120,7 @@ export default function BottomNavBar({
   )}
 </DialogContent>
 <DialogContent> 
-<Typography> Total: A$ {}</Typography>
+<Typography> Total: A$ {billTotal}</Typography>
   
   
   </DialogContent>
@@ -116,13 +133,14 @@ export default function BottomNavBar({
     setCartCount(filtered.length);
     handleClose();
   }}
+  disabled={loading}
   >Close
   </Button>
-       <Button variant="contained"  disabled={
-        cartItems.length === 0 || 
-        cartItems.every(item => item.quantity === 0)}
+       <Button variant="contained"  
+        onClick={handleSendOrder}
+        disabled={isDisabled}
         >
-          Send Order
+           {loading ? "Pending" : "Send Order"}
           </Button>
      </DialogActions>
    </Dialog>

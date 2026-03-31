@@ -9,6 +9,8 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
 
+  const billTotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+
   const increaseQty = (index) => {
     setCartItems(prev =>
       prev.map((item, i) =>
@@ -34,6 +36,7 @@ function App() {
        setCartCount={setCartCount} 
        setCartItems={setCartItems} 
        cartItems={cartItems}/>
+
        <BottomNavBar
   cartCount={cartCount}
   setCartCount={setCartCount}
@@ -41,6 +44,7 @@ function App() {
   setCartItems={setCartItems}
   increaseQty={increaseQty}
   decreaseQty={decreaseQty}
+  billTotal={billTotal}
 />
       </div>
     </div>
