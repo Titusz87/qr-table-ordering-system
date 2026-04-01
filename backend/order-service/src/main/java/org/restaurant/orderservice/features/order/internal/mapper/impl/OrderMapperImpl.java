@@ -15,7 +15,7 @@ import java.util.List;
 public class OrderMapperImpl implements OrderMapper {
     // Converts incoming API request DTO into a service-layer CreateOrderRequest
     @Override
-    public CreateOrderRequest fromDto(CreateOrderRequestDto request) {
+    public CreateOrderRequest fromDto(CreateOnlineOrderRequestDto request) {
         return new CreateOrderRequest(
                 null,
                 request.userName(),

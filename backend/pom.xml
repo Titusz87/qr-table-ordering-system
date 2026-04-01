@@ -12,7 +12,6 @@
     <modules>
         <module>authorization-server</module>
         <module>order-service</module>
-        <module>client-application</module>
         <module>qr-service</module>
         <module>common</module>
     </modules>

@@ -5,8 +5,9 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const CartBadge = styled(Badge)`
   & .${badgeClasses.badge} {
-    top: -12px;
-    right: -6px;
+    top: -28px;
+    right: -12px;
+    transform: scale(1.1);
   }
 `;
 
@@ -14,7 +15,7 @@ export default function CartIconButton({cartCount, onClick}) {
   return (
     <IconButton onClick={onClick}>
       <ShoppingCartIcon fontSize="small" />
-      <CartBadge badgeContent={cartCount} color="primary" overlap="circular" />
+      <CartBadge badgeContent={cartCount} color="error" overlap="circular" />
     </IconButton>
   );
 }
