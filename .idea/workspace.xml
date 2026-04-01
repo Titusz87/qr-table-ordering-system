@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="Fixes Access-Control-Allow-Origin issue">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/api/OrderControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/api/OrderControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/CreateOnlineOrderRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/dto/CreateOrderRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/mapper/impl/OrderMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/mapper/impl/OrderMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client-application/src/components/bottomNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/components/bottomNav.js" afterDir="false" />
-    </list>
+    <list default="true" id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="Fixes Access-Control-Allow-Origin issue" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

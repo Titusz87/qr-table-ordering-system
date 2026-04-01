@@ -32,9 +32,11 @@ export default function BottomNavBar({
   decreaseQty,
   billTotal
 }) {
-  const [open, setOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
+  const [recentOpen, setRecentOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-
+  const [orderSummary, setOrderSummary] = useState(null);
+  
   const handleSendOrder = async () => {
     setLoading(true);
   
@@ -50,16 +52,19 @@ export default function BottomNavBar({
   
     try {
       const response = await api.post("/orders", payload);
+      setOrderSummary(response.data);
+
+      console.log("Order sent:", orderSummary);
   
-      console.log("Order sent:", response.data);
-  
+      setTimeout(() => {
       //clear cart
       setCartItems([]);
       setCartCount(0);
   
       setLoading(false);
-      setOpen(false);
-  
+      setCartOpen(false);
+    }, 2000);
+
     } catch (err) {
       console.error("Failed to send order:", err.response?.data || err);
       setLoading(false);
@@ -72,11 +77,11 @@ export default function BottomNavBar({
     loading; 
 
   const handleClickOpen = () => {
-    setOpen(true);
+    setCartOpen(true);
   };
 
   const handleClose = () => {
-    setOpen(false);
+    setCartOpen(false);
   };
 
 
@@ -92,15 +97,15 @@ export default function BottomNavBar({
     }}
     >
       <BottomNavigation>
-        <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
+        <BottomNavigationAction label="Recents" icon={<RestoreIcon onClick={() => setRecentOpen(true)}/>} />
         <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-        <BottomNavigationAction label="Cart" icon={<CartIconButton cartCount={cartCount} onClick={() => setOpen(true)} />} />
+        <BottomNavigationAction label="Cart" icon={<CartIconButton cartCount={cartCount} onClick={() => setCartOpen(true)} />} />
       </BottomNavigation>
     </Box>
 
      <Dialog
      fullWidth maxWidth="md"
-     open={open}
+     open={cartOpen}
      slots={{
       transition: Transition,
     }}
@@ -147,7 +152,6 @@ export default function BottomNavBar({
 <DialogContent> 
 <Typography> Total: A$ {billTotal}</Typography>
   
-  
   </DialogContent>
 
      <DialogActions>
@@ -177,6 +181,45 @@ export default function BottomNavBar({
           </LoadingButton>
      </DialogActions>
    </Dialog>
+
+   <Dialog
+  fullWidth
+  maxWidth="md"
+  open={recentOpen}
+  onClose={() => setRecentOpen(false)}
+>
+  <DialogTitle>Recent Order</DialogTitle>
+
+  <DialogContent>
+    {!orderSummary ? (
+      <DialogContentText>No recent order</DialogContentText>
+    ) : (
+      <>
+
+        {orderSummary.items?.map((item, index) => (
+          <Box key={index} sx={{ display: "flex", justifyContent: "space-between", mb: 1 }}>
+            <Typography>{item.dishName}</Typography>
+            <Typography>x{item.quantity}</Typography>
+          </Box>
+        ))}
+        <br></br>
+        <br></br>
+        <Typography> Total: A$ {orderSummary.total}</Typography>
+      </>
+    )}
+  </DialogContent>
+
+  <DialogActions>
+    <Button
+    onClick={() => setRecentOpen(false)}
+    variant="outlined"
+    sx={{
+      color: grey[700],
+      borderColor: grey[700]}}
+    >Close</Button>
+  </DialogActions>
+</Dialog>
+
    </>
   );
 }
