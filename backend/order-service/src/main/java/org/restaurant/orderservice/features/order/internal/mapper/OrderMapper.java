@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface OrderMapper {
 
-    CreateOrderRequest fromDto(CreateOnlineOrderRequestDto request);
+    CreateOrderRequest fromDto(CreateOrderRequestDto request);
 
     CreateOrderResponseDto toDto(Order order);
 

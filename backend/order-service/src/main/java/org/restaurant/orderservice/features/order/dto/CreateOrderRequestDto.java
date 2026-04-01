@@ -8,7 +8,7 @@ import org.restaurant.orderservice.features.order.internal.model.PaymentType;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public record CreateOnlineOrderRequestDto(
+public record CreateOrderRequestDto(
         @NotBlank(message=ERROR_MESSAGE_USER_NAME)
         String userName,
         @NotNull(message=ERROR_MESSAGE_EMPTY_LIST)

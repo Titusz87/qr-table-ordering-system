@@ -34,9 +34,9 @@ public class OrderControllerImpl {
 
     @PostMapping
     public ResponseEntity<CreateOrderResponseDto> createOrder(
-            @Valid @RequestBody CreateOnlineOrderRequestDto createOnlineOrderRequestDto
+            @Valid @RequestBody CreateOrderRequestDto createOrderRequestDto
     ) {
-        CreateOrderRequest createOrderRequest = orderMapper.fromDto(createOnlineOrderRequestDto);
+        CreateOrderRequest createOrderRequest = orderMapper.fromDto(createOrderRequestDto);
         Order createdOrder = orderService.createOrder(createOrderRequest);
         CreateOrderResponseDto response = orderMapper.toDto(createdOrder);
         return new ResponseEntity<>(response, HttpStatus.CREATED);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
@@ -16,6 +16,7 @@ import Slide from '@mui/material/Slide';
 import { AddQuantityIconButton, DecreaseQuantityIconButton } from './itemQuantity';
 import { Box, Typography } from "@mui/material";
 import { grey } from '@mui/material/colors';
+import api from "../api";
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -33,27 +34,36 @@ export default function BottomNavBar({
 }) {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [order, setOrder] = useState([])
 
-  useEffect(() => {
-    axios.post('http://localhost:8081/api/v1/order')
-      .then(response => {
-        setOrder(response.data);
-        console.log(order);
-      })
-      .catch(err => console.error(err));
-  }, []);
-
-  const handleSendOrder = () => {
-    setLoading(true); // start loading
-    // simulate async API call with setTimeout
-    // send the order logic here later
-    setTimeout(() => {
-      setLoading(false);
+  const handleSendOrder = async () => {
+    setLoading(true);
+  
+    const payload = {
+      userName: "Daniel123",
+      items: cartItems.map(item => ({
+        dishName: item.dishName,
+        quantity: item.quantity
+      })),
+      paymentType: "APPLE_PAY",
+      comment: ""
+    };
+  
+    try {
+      const response = await api.post("/orders", payload);
+  
+      console.log("Order sent:", response.data);
+  
+      //clear cart
       setCartItems([]);
-      setCartCount(0); 
-      handleClose();
-    }, 2000);
+      setCartCount(0);
+  
+      setLoading(false);
+      setOpen(false);
+  
+    } catch (err) {
+      console.error("Failed to send order:", err.response?.data || err);
+      setLoading(false);
+    }
   };
 
   const isDisabled =
