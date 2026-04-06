@@ -21,7 +21,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping(path="/api/v1/orders")
+@RequestMapping(path="/api/v1/order")
 public class OrderControllerImpl {
 
     private final OrderService orderService;

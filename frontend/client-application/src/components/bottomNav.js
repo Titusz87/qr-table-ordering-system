@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from "react";
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import RestoreIcon from '@mui/icons-material/Restore';
@@ -16,6 +15,7 @@ import Slide from '@mui/material/Slide';
 import { AddQuantityIconButton, DecreaseQuantityIconButton } from './itemQuantity';
 import { Box, Typography } from "@mui/material";
 import { grey } from '@mui/material/colors';
+import { useSearchParams } from "react-router-dom";
 import api from "../api";
 
 
@@ -36,11 +36,19 @@ export default function BottomNavBar({
   const [recentOpen, setRecentOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [orderSummary, setOrderSummary] = useState(null);
+  const [tableId, setTableId] = useState(null);
+  const [searchParams] = useSearchParams();
   
+  useEffect(() => {
+    const id = searchParams.get("tableId");
+    setTableId(id);
+  }, []);
+
   const handleSendOrder = async () => {
     setLoading(true);
   
     const payload = {
+      tableId: Number(tableId),
       userName: "Daniel123",
       items: cartItems.map(item => ({
         dishName: item.dishName,
@@ -51,7 +59,7 @@ export default function BottomNavBar({
     };
   
     try {
-      const response = await api.post("/orders", payload);
+      const response = await api.post("/order", payload);
       setOrderSummary(response.data);
 
       console.log("Order sent:", orderSummary);

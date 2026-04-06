@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e38b5d1-59c3-48d2-b5b4-6842699cee5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/qr-table-ordering-system.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/api/QrController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/internal/service/QrService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/internal/service/impl/QrServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="7e38b5d1-59c3-48d2-b5b4-6842699cee5a" name="Changes" comment="Initial QrService Module implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/api/OrderControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/api/OrderControllerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/qr-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/QrServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/QrServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/internal/service/QrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/internal/service/QrService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/internal/service/impl/QrServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/internal/service/impl/QrServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client-application/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client-application/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client-application/src/components/bottomNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/components/bottomNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client-application/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +60,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.AuthorizationServerApplication.executor": "Run",
     "Spring Boot.OrderServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
@@ -77,7 +69,7 @@
     "last_opened_file_path": "C:/Users/Titus/OneDrive/Desktop/projects/java/qr-table-ordering-system"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.QrServiceApplicationTests">
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
     <configuration name="QrServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="qr-service" />
       <extension name="coverage">
@@ -139,10 +131,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QrServiceApplicationTests" />
-        <item itemvalue="JUnit.QrServiceApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.OrderServiceApplication" />
         <item itemvalue="Spring Boot.AuthorizationServerApplication" />
+        <item itemvalue="JUnit.QrServiceApplicationTests" />
+        <item itemvalue="JUnit.QrServiceApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +153,30 @@
       <option name="presentableId" value="Default" />
       <updated>1775473769259</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial QrService Module implementation">
+      <option name="closed" value="true" />
+      <created>1775475766335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775475766336</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial QrService Module implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial QrService Module implementation" />
   </component>
 </project>
