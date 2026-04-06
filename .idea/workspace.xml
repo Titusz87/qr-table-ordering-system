@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="Fixes Access-Control-Allow-Origin issue" />
+    <list default="true" id="7e38b5d1-59c3-48d2-b5b4-6842699cee5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qr-table-ordering-system.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/api/QrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/internal/service/QrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/internal/service/impl/QrServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/qr-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/QrServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/QrServiceApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +32,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -22,46 +40,75 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Titusz87&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Titusz87"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Titusz87/qr-table-ordering-system.git&quot;,
-    &quot;accountId&quot;: &quot;b5c7cc3e-1c18-4bc3-8567-295df52b6964&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Titusz87/qr-table-ordering-system.git",
+    "accountId": "b5c7cc3e-1c18-4bc3-8567-295df52b6964"
   }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="3BMtgi4MF6iDWPurjAJGo9Zv5nj" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="3ByujllOTJ1COAtPdfb1hhSEqlY" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AuthorizationServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Titus/OneDrive/Desktop/projects/java/qr-table-ordering-system&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.QrServiceApplicationTests.contextLoads.executor": "Run",
+    "JUnit.QrServiceApplicationTests.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AuthorizationServerApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Titus/OneDrive/Desktop/projects/java/qr-table-ordering-system"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Titus\OneDrive\Desktop\projects\java\qr-table-ordering-system\backend" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
+}]]></component>
+  <component name="RunManager" selected="JUnit.QrServiceApplicationTests">
+    <configuration name="QrServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="qr-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.restaurant.qrservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.restaurant.qrservice" />
+      <option name="MAIN_CLASS_NAME" value="org.restaurant.qrservice.QrServiceApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QrServiceApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="qr-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.restaurant.qrservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.restaurant.qrservice" />
+      <option name="MAIN_CLASS_NAME" value="org.restaurant.qrservice.QrServiceApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="authorization-server" />
@@ -92,6 +139,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QrServiceApplicationTests" />
+        <item itemvalue="JUnit.QrServiceApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.OrderServiceApplication" />
         <item itemvalue="Spring Boot.AuthorizationServerApplication" />
       </list>
@@ -106,51 +155,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="17f5ab08-c36b-4a15-914b-3bd403b58df4" name="Changes" comment="" />
-      <created>1774310883407</created>
+      <changelist id="7e38b5d1-59c3-48d2-b5b4-6842699cee5a" name="Changes" comment="" />
+      <created>1775473769259</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1774310883407</updated>
+      <updated>1775473769259</updated>
     </task>
-    <task id="LOCAL-00001" summary="Refactors the project's structure">
-      <option name="closed" value="true" />
-      <created>1774315495345</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1774315495346</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Refactors the project's structure">
-      <option name="closed" value="true" />
-      <created>1774315544613</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1774315544613</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Adds menu endpoint">
-      <option name="closed" value="true" />
-      <created>1774324418591</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1774324418591</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Fixes Access-Control-Allow-Origin issue">
-      <option name="closed" value="true" />
-      <created>1774404996503</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1774404996504</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactors the project's structure" />
-    <MESSAGE value="Adds menu endpoint" />
-    <MESSAGE value="Fixes Access-Control-Allow-Origin issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes Access-Control-Allow-Origin issue" />
   </component>
 </project>
