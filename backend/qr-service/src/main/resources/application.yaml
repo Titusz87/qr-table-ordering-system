@@ -1,1 +1,6 @@
-spring.application.name=qr-service
+spring:
+  application:
+  name: "qr-service"
+
+server:
+  port: 8082
