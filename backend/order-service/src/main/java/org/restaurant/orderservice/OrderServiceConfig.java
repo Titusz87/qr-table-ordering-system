@@ -18,7 +18,7 @@ import java.util.List;
 @EnableWebSecurity
 public class OrderServiceConfig {
 
-    private static final String order_path = "/api/v1/orders/**";
+    private static final String order_path = "/api/v1/order/**";
     private static final String menu_path = "/api/v1/menu/**";
 
     @Bean

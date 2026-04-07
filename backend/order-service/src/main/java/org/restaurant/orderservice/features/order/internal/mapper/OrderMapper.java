@@ -17,11 +17,7 @@ public interface OrderMapper {
 
     List<OrderItemResponseDto> toDto(List<OrderItem> items);
 
-
-//****************
-
     GetOrdersRequest fromGetOrdersRequestDto(GetOrdersRequestDto request);
-
 
     List<GetOrdersResponseDto> toGetOrdersResponseDto(List<Order> orders);
 

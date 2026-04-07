@@ -120,7 +120,7 @@ export default function BottomNavBar({
     keepMounted
      onClose={handleClose}
    >
-     <DialogTitle>Table #3 <br /> <br />  </DialogTitle>
+     <DialogTitle>Table #{tableId} <br /> <br />  </DialogTitle>
 
      <DialogContent>
        {cartItems.length === 0 ? (

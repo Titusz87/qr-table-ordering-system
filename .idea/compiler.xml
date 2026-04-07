@@ -13,6 +13,9 @@
         <module name="authorization-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="qr-table-ordering-system" target="25" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

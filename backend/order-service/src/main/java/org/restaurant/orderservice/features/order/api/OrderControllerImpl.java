@@ -10,16 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-/**
- * //@param orderService
- * //@param orderMapper
- *
- *
- */
-
-//TODO: If user registered do not ask for details like address etc, but return it from db with the response.
-
-
 @RestController
 @RequestMapping(path="/api/v1/order")
 public class OrderControllerImpl {
