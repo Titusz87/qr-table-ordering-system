@@ -17,6 +17,7 @@ import { Box, Typography } from "@mui/material";
 import { grey } from '@mui/material/colors';
 import { useSearchParams } from "react-router-dom";
 import api from "../api";
+import { createSession } from "../session";
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -40,8 +41,16 @@ export default function BottomNavBar({
   const [searchParams] = useSearchParams();
   
   useEffect(() => {
+    // Get tableId from URL
     const id = searchParams.get("tableId");
-    setTableId(id);
+    if (id) {
+      // Call backend session endpoint
+      createSession(id).then((tableIdFromBackend) => {
+        setTableId(tableIdFromBackend);
+      }).catch(err => {
+        console.error("Failed to create session:", err);
+      });
+    }
   }, []);
 
   const handleSendOrder = async () => {

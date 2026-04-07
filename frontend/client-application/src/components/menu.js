@@ -14,12 +14,13 @@ import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
 import { red } from '@mui/material/colors';
 import { alpha } from '@mui/material/styles';
+import api from "../api";
 
 export default function DishReviewCard({ setCartCount, setCartItems, cartItems }) {
   const [menu, setMenu] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:8081/api/v1/menu')
+    api.get('http://localhost:8081/api/v1/menu')
       .then(response => {
         setMenu(response.data);
       })
