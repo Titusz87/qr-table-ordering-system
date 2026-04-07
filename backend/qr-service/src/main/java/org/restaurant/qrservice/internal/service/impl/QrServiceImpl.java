@@ -14,13 +14,13 @@ import java.io.IOException;
 @Service
 public class QrServiceImpl implements QrService {
 
-    private final String url = "http://localhost:3000/order?tableId=";
+    private final String url = "http://localhost:3000/?tableId=";
     @Override
     public byte[] create(Integer tableNumber) throws WriterException, IOException {
 
-            String qrContent = url + tableNumber.toString();
-            QRCodeWriter qrCodeWriter = new QRCodeWriter();
-            BitMatrix bitMatrix = qrCodeWriter.encode(qrContent, BarcodeFormat.QR_CODE, 200, 200);
+        String qrContent = url + tableNumber.toString();
+        QRCodeWriter qrCodeWriter = new QRCodeWriter();
+        BitMatrix bitMatrix = qrCodeWriter.encode(qrContent, BarcodeFormat.QR_CODE, 200, 200);
 
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         MatrixToImageWriter.writeToStream(bitMatrix, "PNG", outputStream);

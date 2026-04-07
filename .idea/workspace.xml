@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e38b5d1-59c3-48d2-b5b4-6842699cee5a" name="Changes" comment="Initial QrService Module implementation">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/api/SessionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/api/OrderControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/api/OrderControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/order/internal/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/api/UserControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/api/UserControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/features/user/internal/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/client-application/src/components/bottomNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/components/bottomNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/internal/service/impl/QrServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/internal/service/impl/QrServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,29 +46,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.QrServiceApplicationTests.contextLoads.executor": "Run",
-    "JUnit.QrServiceApplicationTests.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.AuthorizationServerApplication.executor": "Run",
-    "Spring Boot.OrderServiceApplication.executor": "Run",
-    "Spring Boot.QrServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Titus/OneDrive/Desktop/projects/java/qr-table-ordering-system",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.QrServiceApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QrServiceApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthorizationServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.QrServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Titus/OneDrive/Desktop/projects/java/qr-table-ordering-system&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Spring Boot.QrServiceApplication">
+}</component>
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
     <configuration name="QrServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="qr-service" />
       <extension name="coverage">
@@ -199,9 +191,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.QrServiceApplication" />
         <item itemvalue="Spring Boot.OrderServiceApplication" />
         <item itemvalue="Spring Boot.AuthorizationServerApplication" />
+        <item itemvalue="Spring Boot.QrServiceApplication" />
         <item itemvalue="JUnit.QrServiceApplicationTests" />
         <item itemvalue="JUnit.QrServiceApplicationTests.contextLoads" />
       </list>
@@ -259,16 +251,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial QrService Module implementation" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial QrService Module implementation" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/qr-service/src/main/java/org/restaurant/qrservice/QrServiceApplication.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

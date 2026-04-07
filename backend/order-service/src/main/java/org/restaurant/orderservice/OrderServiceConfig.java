@@ -7,10 +7,12 @@ import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
 
@@ -39,7 +41,7 @@ public class OrderServiceConfig {
                         .hasAuthority("SCOPE_order.delete")
                         .requestMatchers(HttpMethod.GET,  menu_path).permitAll()
                         //.hasAuthority("SCOPE_menu.get")
-
+                        .requestMatchers("/api/v1/session/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .oauth2ResourceServer((auth2) -> auth2
@@ -59,4 +61,12 @@ public class OrderServiceConfig {
         return source;
     }
 
+    @Configuration
+    public class AppConfig {
+
+        @Bean
+        public RestTemplate restTemplate() {
+            return new RestTemplate();
+        }
+    }
 }
