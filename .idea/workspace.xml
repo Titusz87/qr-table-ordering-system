@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7e38b5d1-59c3-48d2-b5b4-6842699cee5a" name="Changes" comment="Initial QrService Module implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/order-service/src/main/java/org/restaurant/orderservice/OrderServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/client-application/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client-application/src/components/bottomNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/components/bottomNav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/client-application/src/components/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/client-application/src/components/menu.js" afterDir="false" />
     </list>
@@ -67,7 +69,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.AuthorizationServerApplication">
+  <component name="RunManager" selected="Spring Boot.QrServiceApplication">
     <configuration name="QrServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="qr-service" />
       <extension name="coverage">
@@ -190,9 +192,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AuthorizationServerApplication" />
-        <item itemvalue="Spring Boot.OrderServiceApplication" />
         <item itemvalue="Spring Boot.QrServiceApplication" />
+        <item itemvalue="Spring Boot.OrderServiceApplication" />
+        <item itemvalue="Spring Boot.AuthorizationServerApplication" />
         <item itemvalue="JUnit.QrServiceApplicationTests" />
         <item itemvalue="JUnit.QrServiceApplicationTests.contextLoads" />
       </list>

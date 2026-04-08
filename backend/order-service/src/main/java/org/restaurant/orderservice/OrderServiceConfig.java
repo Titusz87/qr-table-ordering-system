@@ -22,6 +22,8 @@ public class OrderServiceConfig {
 
     private static final String order_path = "/api/v1/order/**";
     private static final String menu_path = "/api/v1/menu/**";
+    private static final String session_path = "/api/v1/session/**";
+
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
@@ -41,7 +43,7 @@ public class OrderServiceConfig {
                         .hasAuthority("SCOPE_order.delete")
                         .requestMatchers(HttpMethod.GET,  menu_path).permitAll()
                         //.hasAuthority("SCOPE_menu.get")
-                        .requestMatchers("/api/v1/session/**").permitAll()
+                        .requestMatchers(HttpMethod.POST, session_path).permitAll()
                         .anyRequest().authenticated()
                 )
                 .oauth2ResourceServer((auth2) -> auth2

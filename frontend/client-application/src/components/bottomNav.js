@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import RestoreIcon from '@mui/icons-material/Restore';
@@ -31,27 +31,15 @@ export default function BottomNavBar({
   setCartItems,
   increaseQty,
   decreaseQty,
-  billTotal
+  billTotal,
+  tableId,
+  sessionReady
 }) {
+  
   const [cartOpen, setCartOpen] = useState(false);
   const [recentOpen, setRecentOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [orderSummary, setOrderSummary] = useState(null);
-  const [tableId, setTableId] = useState(null);
-  const [searchParams] = useSearchParams();
-  
-  useEffect(() => {
-    // Get tableId from URL
-    const id = searchParams.get("tableId");
-    if (id) {
-      // Call backend session endpoint
-      createSession(id).then((tableIdFromBackend) => {
-        setTableId(tableIdFromBackend);
-      }).catch(err => {
-        console.error("Failed to create session:", err);
-      });
-    }
-  }, []);
 
   const handleSendOrder = async () => {
     setLoading(true);
@@ -91,7 +79,8 @@ export default function BottomNavBar({
   const isDisabled =
     cartItems.length === 0 ||
     cartItems.every(item => item.quantity === 0) ||
-    loading; 
+    loading||
+    !sessionReady; 
 
   const handleClickOpen = () => {
     setCartOpen(true);

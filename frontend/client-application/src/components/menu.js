@@ -16,16 +16,18 @@ import { red } from '@mui/material/colors';
 import { alpha } from '@mui/material/styles';
 import api from "../api";
 
-export default function DishReviewCard({ setCartCount, setCartItems, cartItems }) {
+export default function DishReviewCard({ setCartCount, setCartItems, cartItems, sessionReady  }) {
   const [menu, setMenu] = useState([])
 
   useEffect(() => {
-    api.get('http://localhost:8081/api/v1/menu')
+    if (!sessionReady) return;
+  
+    api.get('/menu')
       .then(response => {
         setMenu(response.data);
       })
       .catch(err => console.error(err));
-  }, []);
+  }, [sessionReady]);
 
   return (
     <Stack spacing={2} sx={{ padding: 2, pb: 10 }}>
